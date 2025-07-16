@@ -1,36 +1,19 @@
----
-layout: iframe
-title: 쿠폰 코드 링크 생성기
-permalink: /iframe/coupon.html
----
+<!DOCTYPE html>
+<html lang="ko">
 
-<h2 class="mb-3">쿠폰 코드 링크 생성기</h2>
-<form class="row g-3 mb-3">
-    <div class="col-auto">
-        <label for="uid" class="form-label">UID 입력:</label>
-        <input type="text" id="uid" class="form-control" placeholder="UID 입력">
-    </div>
-    <div class="col-auto align-self-end">
-        <button type="button" id="openSelectedBtn" class="btn btn-primary">체크된 링크 일괄 열기</button>
-    </div>
-    <div class="col-12">
-        <button type="button" class="btn btn-warning" onclick="showDonate()">💝 커피값 후원하기</button>
-    </div>
-</form>
-<div class="table-responsive">
-    <table class="table table-bordered table-hover align-middle">
-        <thead>
-            <tr>
-                <th><input type="checkbox" id="selectAll"> 전체</th>
-                <th>번호</th>
-                <th>코드</th>
-                <th>보상/설명</th>
-                <th>링크 이동</th>
-            </tr>
-        </thead>
-        <tbody id="coupon-tbody"></tbody>
-    </table>
-</div>
-<script>
-    // JS 코드 (쿠폰 자동생성 등) 넣으시면 됩니다
-</script>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <!-- 독립 CSS만 포함 (main.css 등 공통 css는 제외) -->
+    <link rel="stylesheet" href="/assets/css/special.css">
+</head>
+
+<body>
+    {% include header.html %}
+    <main>
+        {{ content }}
+    </main>
+    {% include footer.html %}
+</body>
+
+</html>
