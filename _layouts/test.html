@@ -9,11 +9,15 @@
 </head>
 
 <body>
-    {% include header.html %}
+    <div class="site-header">
+        {% include header.html %}
+    </div>
     <main>
         {{ content }}
     </main>
-    {% include footer.html %}
+    <div class="site-footer">
+        {% include footer.html %}
+    </div>
 </body>
 
 </html>
