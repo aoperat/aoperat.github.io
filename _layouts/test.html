@@ -1,149 +1,36 @@
 ---
-layout: default
+layout: iframe
 title: 쿠폰 코드 링크 생성기
+permalink: /iframe/coupon.html
 ---
 
-{% include site-header.html %}
-
-<main class="main container typeset">
-    <button class="donate-btn button" type="button" onclick="showDonate()">💝 커피값 후원하기</button>
-
-    <h2>쿠폰 코드 링크 생성기</h2>
-
-    <form class="form" onsubmit="return false;">
-        <label for="uid">UID 입력:</label>
-        <input type="text" id="uid" name="uid" placeholder="UID 입력" required>
-        <button id="openSelectedBtn" class="button" type="button">체크된 링크 일괄 열기</button>
-    </form>
-
-    <div class="table-responsive">
-        <table class="coupon-table">
-            <thead>
-                <tr>
-                    <th><input type="checkbox" id="selectAll"> 전체</th>
-                    <th>번호</th>
-                    <th>코드</th>
-                    <th>보상/설명</th>
-                    <th>링크 이동</th>
-                </tr>
-            </thead>
-            <tbody id="coupon-tbody">
-                <!-- JS에서 렌더링 -->
-            </tbody>
-        </table>
+<h2 class="mb-3">쿠폰 코드 링크 생성기</h2>
+<form class="row g-3 mb-3">
+    <div class="col-auto">
+        <label for="uid" class="form-label">UID 입력:</label>
+        <input type="text" id="uid" class="form-control" placeholder="UID 입력">
     </div>
-
-    <script>
-        // 후원 팝업
-        function showDonate() {
-            alert(`[후원 안내]
-
-예금주: 이*환
-국민은행: 102702-04-128855
-
-작은 후원도 큰 힘이 됩니다. 감사합니다!`);
-        }
-
-        // 쿠폰 데이터
-        const coupons = [
-            { code: "RINKARMA", desc: "린 *" },
-            { code: "SECRETCODE", desc: "루비 300개, 열쇠 30개" },
-            // ... (중략, 기존과 동일하게 배열을 넣어주세요)
-            { code: "JULYSENAMONTH", desc: "알 2개 2개 3개" }
-        ];
-
-        // 테이블 생성
-        const tbody = document.getElementById('coupon-tbody');
-        coupons.forEach((row, i) => {
-            const tr = document.createElement('tr');
-
-            // 체크박스
-            const tdCheck = document.createElement('td');
-            if (row.code) {
-                const cb = document.createElement('input');
-                cb.type = 'checkbox';
-                cb.className = 'cb-coupon';
-                cb.dataset.idx = i;
-                tdCheck.appendChild(cb);
-            }
-            tr.appendChild(tdCheck);
-
-            // 번호
-            const tdNum = document.createElement('td');
-            tdNum.textContent = i + 1;
-            tr.appendChild(tdNum);
-
-            // 코드
-            const tdCode = document.createElement('td');
-            tdCode.textContent = row.code;
-            tr.appendChild(tdCode);
-
-            // 설명
-            const tdDesc = document.createElement('td');
-            tdDesc.textContent = row.desc;
-            tr.appendChild(tdDesc);
-
-            // 버튼
-            const tdBtn = document.createElement('td');
-            if (row.code) {
-                const btn = document.createElement('button');
-                btn.textContent = "이동";
-                btn.className = "button";
-                btn.onclick = function () {
-                    const uid = document.getElementById('uid').value.trim();
-                    if (!uid) {
-                        alert('UID를 입력하세요.');
-                        document.getElementById('uid').focus();
-                        return;
-                    }
-                    const url = `https://coupon.netmarble.com/tskgb?playerId=${encodeURIComponent(uid)}&code=${row.code}`;
-                    window.open(url, '_blank');
-                };
-                tdBtn.appendChild(btn);
-            }
-            tr.appendChild(tdBtn);
-
-            tbody.appendChild(tr);
-        });
-
-        // 전체선택 기능
-        document.getElementById('selectAll').addEventListener('change', function () {
-            const checked = this.checked;
-            document.querySelectorAll('.cb-coupon').forEach(cb => {
-                cb.checked = checked;
-            });
-        });
-
-        // 개별 체크 해제/선택시 전체선택 상태 동기화
-        tbody.addEventListener('change', function (e) {
-            if (e.target.classList.contains('cb-coupon')) {
-                const allCheckboxes = Array.from(document.querySelectorAll('.cb-coupon'));
-                const allChecked = allCheckboxes.every(cb => cb.checked);
-                document.getElementById('selectAll').checked = allChecked;
-            }
-        });
-
-        // 일괄 오픈 버튼 기능
-        document.getElementById('openSelectedBtn').onclick = function () {
-            const uid = document.getElementById('uid').value.trim();
-            if (!uid) {
-                alert('UID를 입력하세요.');
-                document.getElementById('uid').focus();
-                return;
-            }
-            const checked = document.querySelectorAll('.cb-coupon:checked');
-            if (checked.length === 0) {
-                alert('적어도 하나 이상 선택하세요.');
-                return;
-            }
-            checked.forEach(cb => {
-                const idx = Number(cb.dataset.idx);
-                const code = coupons[idx].code;
-                const url = `https://coupon.netmarble.com/tskgb?playerId=${encodeURIComponent(uid)}&code=${code}`;
-                window.open(url, '_blank');
-            });
-        };
-    </script>
-</main>
-
-{% include site-footer.html %}
+    <div class="col-auto align-self-end">
+        <button type="button" id="openSelectedBtn" class="btn btn-primary">체크된 링크 일괄 열기</button>
+    </div>
+    <div class="col-12">
+        <button type="button" class="btn btn-warning" onclick="showDonate()">💝 커피값 후원하기</button>
+    </div>
+</form>
+<div class="table-responsive">
+    <table class="table table-bordered table-hover align-middle">
+        <thead>
+            <tr>
+                <th><input type="checkbox" id="selectAll"> 전체</th>
+                <th>번호</th>
+                <th>코드</th>
+                <th>보상/설명</th>
+                <th>링크 이동</th>
+            </tr>
+        </thead>
+        <tbody id="coupon-tbody"></tbody>
+    </table>
+</div>
+<script>
+    // JS 코드 (쿠폰 자동생성 등) 넣으시면 됩니다
+</script>
