@@ -129,7 +129,7 @@ navigation_header:
   - title: Search
     url: /search/
   - title: daebomul
-    url: /test/
+    url: https://aoperat.github.io/daebomul
   # - title: Fork Alembic
   #   url: https://github.com/daviddarnes/alembic
 
