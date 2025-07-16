@@ -1,10 +1,14 @@
 ---
-layout: default
+layout: none
+permalink: /coupon.html
+
 ---
+<!DOCTYPE html>
+<html lang="ko">
 
-{% include site-header.html %}
-
-<main class="main  container">
+<head>
+    <meta charset="UTF-8">
+    <title>쿠폰 코드 링크 생성기</title>
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -50,7 +54,9 @@ layout: default
             font-weight: bold;
         }
     </style>
+</head>
 
+<body>
     <button class="donate-btn" onclick="showDonate()">💝 커피값 후원하기</button>
     <h2>쿠폰 코드 링크 생성기</h2>
     <label>
@@ -259,6 +265,6 @@ layout: default
             });
         };
     </script>
-</main>
+</body>
 
-{% include site-footer.html %}
+</html>
