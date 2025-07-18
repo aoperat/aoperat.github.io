@@ -126,7 +126,7 @@ navigation_header:
   url: /categories/
 - title: Search
   url: /search/
-- title: /daebomul/
+- title: 대보물시대쿠폰입력
   url: https://aoperat.github.io/daebomul
 
 navigation_footer:
