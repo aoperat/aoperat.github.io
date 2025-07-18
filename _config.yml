@@ -38,16 +38,14 @@ plugins:
 paginate: 2 # jekyll-paginate > items per page
 paginate_path: blog/page:num # jekyll-paginate > blog page
 jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
-twitter:
-  username: DavidDarnes # jekyll-seo-tag > Owners twitter username
-author: DavidDarnes # jekyll-seo-tag > default author
+# twitter:
+#   username: Developro # jekyll-seo-tag > Owners twitter username
+author: Developro # jekyll-seo-tag > default author
 social: # jekyll-seo-tag > social overrides
   name: David Darnes # jekyll-seo-tag > real name
   links:  # jekyll-seo-tag > social aliases (sameAs)
-    - https://twitter.com/DavidDarnes
-    - https://www.facebook.com/daviddarnes
-    - https://www.linkedin.com/in/daviddarnes
-    - https://github.com/daviddarnes
+    - https://aoperat.github.io
+    - https://github.com/developro
 # markdown: CommonMark # Markdown parse settings, CommonMark performs slightly better an others in build time
 # commonmark:
   # options: ["SMART", "FOOTNOTES"]
@@ -92,14 +90,14 @@ defaults:
 
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
-lang: en-GB # Set the site language
-title: "Alembic" # Site name or title, also used in jekyll-seo-tag
+lang: ko # Set the site language
+title: "디벨로프로" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
-description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
+description: "개발을 통해 일상에 가치를 더하고자 노력하는 개발자입니다." # Site description and default description, also used in jekyll-seo-tag
 url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
 baseurl: ""
-repo: "https://github.com/daviddarnes/alembic"
-email: "me@daviddarnes.com"
+repo: "https://github.com/Developro/alembic"
+email: "me@Developro.com"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 # date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting
 # google_analytics: ""
@@ -123,8 +121,8 @@ favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
 navigation_header:
 - title: Home
   url: /
-- title: Elements
-  url: /elements/
+# - title: Elements
+#   url: /elements/
 - title: Blog
   url: /blog/
 - title: Categories
@@ -139,11 +137,11 @@ navigation_footer:
   url: https://darn.es
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
-  Twitter: https://twitter.com/DavidDarnes
-  LinkedIn: https://www.linkedin.com/in/daviddarnes
-  GitHub: https://github.com/daviddarnes
-  link: https://darn.es
-  RSS: /feed.xml
+  Tistory: https://developro.tistory.com/
+  GitHub: https://github.com/aoperat
+  # LinkedIn: https://www.linkedin.com/in/Developro
+  # link: https://darn.es
+  # RSS: /feed.xml
 
 sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour
   Twitter: "#0d94e7"
