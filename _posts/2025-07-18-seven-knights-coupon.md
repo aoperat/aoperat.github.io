@@ -2,7 +2,7 @@
 title: 세븐나이츠 대보물시대 쿠폰 자동입력
 description: "세븐나이츠 대보물시대 쿠폰 자동입력 페이지 사용법 총정리! UID만 입력하면 모든 쿠폰을 한 번에 등록. 
 categories:
-- 세븐나이츠
+  - 세븐나이츠
 feature_image: "https://blog.kakaocdn.net/dna/OfUo1/btsPjP9MWdg/AAAAAAAAAAAAAAAAAAAAAGUbb_T3IS8CYJ5CiZtauilUvn4mt78qo-pk8UA-jZT8/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1753973999&allow_ip=&allow_referer=&signature=kC7ShQtHrwjDRxApEfLHyWZLgIE%3D"
 tags:
   - 세븐나이츠
