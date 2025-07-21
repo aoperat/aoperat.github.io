@@ -24,8 +24,8 @@ url: "https://aoperat.github.io" # ← 수정이 필요한 곳 (본인 주소)
 github:
   username: aoperat # 본인 GitHub 사용자명으로 변경   ← 수정이 필요한 곳
 
-twitter:
-  username: aoperat # 본인 트위터 사용자명으로 변경 ← 수정이 필요한 곳
+# twitter:
+#   username: aoperat # 본인 트위터 사용자명으로 변경 ← 수정이 필요한 곳
 
 social:
   # 전체 이름으로 변경 (글 작성자 및 푸터 저작권자에 표시됨)
@@ -89,7 +89,7 @@ theme_mode:
 cdn:
 
 # 사이드바 아바타 (로컬 또는 CORS 리소스 사용 가능)
-avatar:
+avatar: /assets/img/favicons/logo-192x192.png
 
 # SEO og:image 태그에 사용될 사이트 전체 미리보기 이미지 URL
 # 각 페이지 front matter의 'image'로 덮어쓸 수 있음
