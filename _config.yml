@@ -19,7 +19,7 @@ description: >- # SEO 메타와 atom 피드에 사용됨
   A minimal, responsive and feature-rich Jekyll theme for technical writing.  # ← 사이트 설명
 
 # 사이트의 프로토콜 및 호스트명 입력 (예: 'https://username.github.io', 마지막에 '/' 없이)
-url: "" # ← 수정이 필요한 곳 (본인 주소)
+url: "https://aoperat.github.io" # ← 수정이 필요한 곳 (본인 주소)
 
 github:
   username: aoperat # 본인 GitHub 사용자명으로 변경   ← 수정이 필요한 곳
