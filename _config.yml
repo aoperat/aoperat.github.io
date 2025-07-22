@@ -54,7 +54,7 @@ webmaster_verifications:
 # 웹 분석(트래픽 측정) 도구 설정
 analytics:
   google:
-    id: # 구글 애널리틱스 ID 입력
+    id: G-XF9H5LNT7T # 구글 애널리틱스 ID 입력
   goatcounter:
     id: # GoatCounter ID 입력
   umami:
