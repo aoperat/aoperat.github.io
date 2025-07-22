@@ -15,14 +15,14 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register(swUrl).then((registration) => {
       // Restore the update window that was last manually closed by the user
       if (registration.waiting) {
-         popupWindow.show();
+        popupWindow.show();
       }
 
       registration.addEventListener('updatefound', () => {
         registration.installing.addEventListener('statechange', () => {
           if (registration.waiting) {
             if (navigator.serviceWorker.controller) {
-              // popupWindow.show(); 
+              popupWindow.show(); // 알림 비활성화
             }
           }
         });
