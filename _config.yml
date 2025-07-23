@@ -138,6 +138,12 @@ paginate: 10
 # 사이트의 기본 URL (baseurl)
 baseurl: ""
 
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+
+
 # ------------ 아래 옵션들은 특별히 필요하지 않으면 수정하지 않는 것을 권장 ------------
 
 kramdown:
