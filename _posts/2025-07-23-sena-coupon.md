@@ -5,9 +5,9 @@ date: 2024-07-23 12:00:00 +0900
 categories: [Game, 세븐나이츠]
 tags: [세븐나이츠, 쿠폰, 쿠폰코드, 링크모음]
 pin: true
-image:
-  path: /assets/img/postimg/seven-coupon.jpg # ← 실제 이미지로 교체 필요
-  alt: 세븐나이츠 쿠폰 대표 이미지
+#image:
+#  path: /assets/img/postimg/seven-coupon.jpg # ← 실제 이미지로 교체 필요
+#  alt: 세븐나이츠 쿠폰 대표 이미지
 ---
 
 세븐나이츠 쿠폰을 쉽고 빠르게 등록하세요!  
