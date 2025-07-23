@@ -141,6 +141,8 @@ baseurl: ""
 plugins:
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-seo-tag # SEO 메타 태그 생성 플러그인 
+
 
 
 
