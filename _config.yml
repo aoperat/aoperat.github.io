@@ -100,7 +100,7 @@ toc: true
 
 comments:
   # 전체 댓글 기능 설정 (비워두면 비활성화)
-  provider: # [disqus | utterances | giscus]
+  provider: giscus # [disqus | utterances | giscus]
   # 각 댓글 제공업체별 상세 설정
   disqus:
     shortname: # Disqus 단축이름 입력
@@ -108,14 +108,14 @@ comments:
     repo: # <깃허브 사용자명>/<저장소명>
     issue_term: # <url | pathname | title | ...>
   giscus:
-    repo: # <깃허브 사용자명>/<저장소명>
-    repo_id:
-    category:
-    category_id:
+    repo: aoperat/aoperat.github.io # <깃허브 사용자명>/<저장소명>
+    repo_id: R_kgDOPQRjSw
+    category: General
+    category_id: DIC_kwDOPQRjS84CtTxj
     mapping: # 옵션, 기본값 'pathname'
     strict: # 옵션, 기본값 '0'
     input_position: # 옵션, 기본값 'bottom'
-    lang: # 옵션, 기본값 site.lang 값
+    lang: ko # 옵션, 기본값 site.lang 값
     reactions_enabled: # 옵션, 기본값 '1'
 
 # 정적 자산 직접 호스팅 설정 (선택사항)
