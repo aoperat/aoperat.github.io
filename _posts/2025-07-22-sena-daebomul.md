@@ -6,9 +6,9 @@ date: 2024-07-21 12:00:00 +0900
 categories: [Game, 세븐나이츠]
 tags: [대보물시대, 세븐나이츠, 쿠폰, 링크모음]
 pin: true
-image:
-  path: /assets/img/postimg/senaEvent.jpg # → 사이트 내 대표 이미지 경로 
-  alt: 대보물시대 이벤트 이미지
+#image:
+#  path: /assets/img/postimg/senaEvent.jpg # → 사이트 내 대표 이미지 경로 
+#  alt: 대보물시대 이벤트 이미지
 ---
 
 
