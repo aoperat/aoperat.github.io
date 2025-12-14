@@ -130,6 +130,7 @@ pwa:
     enabled: true # 오프라인 캐시 기능 사용
     # 아래에 지정한 경로들은 PWA 캐시에 포함하지 않음 (예: 같은 도메인 내 다른 사이트의 baseurl)
     deny_paths:
+      - "/pv"
       # - "/example"  # "/example/*" 주소는 캐시에서 제외됨
 
 # 한 페이지에 보여줄 게시물 수
@@ -141,10 +142,7 @@ baseurl: ""
 plugins:
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-seo-tag # SEO 메타 태그 생성 플러그인 
-
-
-
+  - jekyll-seo-tag # SEO 메타 태그 생성 플러그인
 
 # ------------ 아래 옵션들은 특별히 필요하지 않으면 수정하지 않는 것을 권장 ------------
 
