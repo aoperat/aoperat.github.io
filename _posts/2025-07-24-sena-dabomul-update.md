@@ -4,7 +4,8 @@ description: 2024년 7월 24일 기준으로 세븐나이츠 대보물시대 쿠
 date: 2024-07-24 12:00:00 +0900
 categories: [Game, 세븐나이츠]
 tags: [대보물시대, 세븐나이츠, 쿠폰, 링크모음]
-pin: true
+pin: false
+published: false
 image:
   path: /assets/img/postimg/senaEvent.jpg
   alt: 대보물시대 이벤트 이미지

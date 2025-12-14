@@ -5,6 +5,7 @@ date: 2024-07-21 12:00:00 +0900
 categories: [Guide, 브라우저설정]
 tags: [크롬, 팝업차단, 설정, 링크안열림]
 permalink: /guide/popup-unblock/
+published: false
 ---
 
 **🔒 증상 요약**
