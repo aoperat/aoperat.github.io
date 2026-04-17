@@ -1,0 +1,266 @@
+[
+  {
+    "id": 1,
+    "summary": "애자일(Agile)은 시제품을 반복적으로 제작하며 고객의 변화하는 요구사항에 능동적으로 대응하는 개발 방법론이다.",
+    "detail": "애자일은 폭포수(Waterfall) 모델과 달리 짧은 반복 주기(스프린트)를 통해 소프트웨어를 점진적으로 개발한다. 고객과의 지속적인 협업을 중시하며, 변화에 유연하게 대응하는 것이 핵심 가치이다. 대표적인 구현 방법으로는 스크럼(Scrum), 익스트림 프로그래밍(XP), 칸반(Kanban) 등이 있다. 애자일 선언문(Agile Manifesto)의 4가지 가치와 12가지 원칙에 기반한다.",
+    "key_concepts": ["반복 개발(Iteration)", "스프린트(Sprint)", "고객 협업", "애자일 선언문", "스크럼(Scrum)"],
+    "common_mistakes": ["폭포수 모델과 혼동 (폭포수는 순차적, 애자일은 반복적)", "애자일이 계획을 아예 세우지 않는다고 오해", "스크럼과 애자일을 동일시하는 오류"],
+    "related": ["스크럼(Scrum)", "익스트림 프로그래밍(XP)", "폭포수 모델(Waterfall)", "칸반(Kanban)", "DevOps"]
+  },
+  {
+    "id": 2,
+    "summary": "리팩토링(Refactoring)은 외부 동작을 변경하지 않고 코드 내부 구조를 개선하여 가독성과 유지보수성을 높이는 행위이다.",
+    "detail": "리팩토링의 목적은 기능 자체를 바꾸는 것이 아니라, 코드를 이해하기 쉽고 수정하기 편하게 만들어 개발 속도를 높이는 것이다. 마틴 파울러(Martin Fowler)가 체계화하였으며, 기술 부채(Technical Debt)를 줄이는 데 효과적이다. 단위 테스트가 갖춰진 상태에서 진행하는 것이 안전하며, 클린 코드 작성과 밀접하게 연관된다. 코드 중복 제거, 메서드 추출, 변수명 개선 등이 대표적인 리팩토링 기법이다.",
+    "key_concepts": ["코드 구조 개선", "기능 변경 없음", "가독성 향상", "기술 부채 감소", "단위 테스트"],
+    "common_mistakes": ["기능을 추가하는 것을 리팩토링으로 오해", "리팩토링과 디버깅을 동일시하는 오류", "성능 최적화만을 리팩토링으로 혼동"],
+    "related": ["클린 코드(Clean Code)", "기술 부채(Technical Debt)", "단위 테스트(Unit Test)", "코드 스멜(Code Smell)", "애자일"]
+  },
+  {
+    "id": 3,
+    "summary": "기능 요구사항은 시스템이 '무엇을 해야 하는가'를 정의하고, 비기능 요구사항은 시스템이 '어떻게 동작해야 하는가'(성능, 보안, 신뢰성 등)를 정의한다.",
+    "detail": "기능 요구사항(Functional Requirements)은 시스템이 제공해야 하는 기능과 서비스를 명세한다. 예를 들어 '사용자는 로그인할 수 있어야 한다'가 해당된다. 비기능 요구사항(Non-functional Requirements)은 시스템의 품질 속성을 정의하며 성능, 보안, 가용성, 확장성, 유지보수성 등이 포함된다. 두 요구사항 모두 요구사항 명세서(SRS)에 포함되며, 소프트웨어 설계의 기초가 된다.",
+    "key_concepts": ["기능 요구사항(Functional)", "비기능 요구사항(Non-functional)", "성능", "보안", "요구사항 명세서(SRS)"],
+    "common_mistakes": ["성능 요구사항을 기능 요구사항으로 잘못 분류", "비기능 요구사항의 중요성을 과소평가", "두 요구사항의 경계를 명확히 구분 못함"],
+    "related": ["요구사항 명세서(SRS)", "시스템 설계", "품질 속성(Quality Attributes)", "소프트웨어 아키텍처", "유스케이스(Use Case)"]
+  },
+  {
+    "id": 4,
+    "summary": "클래스 다이어그램(Class Diagram)은 UML의 구조적 다이어그램으로, 시스템의 클래스와 클래스 간의 관계를 표현한다.",
+    "detail": "클래스 다이어그램은 객체지향 설계에서 가장 많이 사용되는 UML 다이어그램이다. 클래스의 속성(Attribute)과 연산(Operation), 클래스 간 관계(연관, 상속, 집합 등)를 표현한다. 소프트웨어의 정적 구조를 나타내며, 시스템 설계 단계에서 핵심적으로 활용된다. 인터페이스, 추상 클래스, 패키지 등도 함께 표현할 수 있다.",
+    "key_concepts": ["클래스(Class)", "속성(Attribute)", "연산(Operation)", "관계(Relationship)", "UML 구조적 다이어그램"],
+    "common_mistakes": ["시퀀스 다이어그램과 혼동 (시퀀스는 동적, 클래스는 정적)", "클래스와 객체 다이어그램을 동일시", "행위 다이어그램과 구조 다이어그램 구분 미흡"],
+    "related": ["UML", "객체 다이어그램(Object Diagram)", "시퀀스 다이어그램(Sequence Diagram)", "컴포넌트 다이어그램", "패키지 다이어그램"]
+  },
+  {
+    "id": 5,
+    "summary": "UML은 사물(Things), 관계(Relationships), 다이어그램(Diagrams)의 3가지 구성요소로 이루어진다.",
+    "detail": "UML(Unified Modeling Language)의 구성요소 중 사물은 클래스, 인터페이스, 컴포넌트 등 모델링 대상이며, 관계는 사물들 사이의 연관·의존·상속·실체화 관계를 표현한다. 다이어그램은 사물과 관계를 시각적으로 표현한 것으로 구조적 다이어그램과 행위적 다이어그램으로 분류된다. UML은 소프트웨어 시스템을 시각화, 명세화, 구축, 문서화하기 위한 표준 모델링 언어이다.",
+    "key_concepts": ["사물(Things)", "관계(Relationship)", "다이어그램(Diagram)", "클래스(Class)", "인터페이스(Interface)"],
+    "common_mistakes": ["UML 구성요소를 다이어그램 종류로만 한정하여 생각", "사물과 관계를 같은 범주로 혼동", "인터페이스를 사물이 아닌 관계로 오분류"],
+    "related": ["클래스 다이어그램", "유스케이스 다이어그램", "시퀀스 다이어그램", "객체지향 설계", "소프트웨어 모델링"]
+  },
+  {
+    "id": 6,
+    "summary": "집합 관계(Aggregation)는 전체-부분 관계이며, 일반화 관계(Generalization)는 상속을 나타내는 IS-A 관계이다.",
+    "detail": "UML에서 Aggregation(집합 관계)은 전체(Whole)와 부분(Part) 사이의 약한 포함 관계를 나타내며, 빈 마름모꼴로 표시한다. 부분 객체가 전체 객체 없이도 존재할 수 있다. Generalization(일반화 관계)는 부모 클래스와 자식 클래스 간의 상속 관계를 의미하며, 화살표가 부모 방향을 가리킨다. Composition(합성 관계)은 Aggregation보다 강한 포함 관계로 채워진 마름모꼴로 표시한다.",
+    "key_concepts": ["집합 관계(Aggregation)", "일반화 관계(Generalization)", "합성 관계(Composition)", "IS-A 관계", "HAS-A 관계"],
+    "common_mistakes": ["Aggregation과 Composition을 혼동 (Composition은 생명주기 공유)", "Generalization 화살표 방향 혼동 (자식→부모)", "연관 관계와 집합 관계를 동일시"],
+    "related": ["연관 관계(Association)", "의존 관계(Dependency)", "실체화 관계(Realization)", "상속(Inheritance)", "클래스 다이어그램"]
+  },
+  {
+    "id": 7,
+    "summary": "패키지 다이어그램(Package Diagram)은 시스템의 패키지들과 패키지 간 의존 관계를 표현하는 UML 구조적 다이어그램이다.",
+    "detail": "패키지 다이어그램은 시스템을 논리적인 그룹(패키지)으로 나누고, 각 패키지 간의 의존성을 시각화한다. 대규모 시스템의 전체 구조를 파악하는 데 유용하며, 순환 의존성을 발견하고 제거하는 데 도움이 된다. 패키지는 폴더 모양 기호로 표현되고, 의존 관계는 점선 화살표로 나타낸다. 소프트웨어 아키텍처 설계 시 모듈 분리와 계층 구조 설계에 활용된다.",
+    "key_concepts": ["패키지(Package)", "의존 관계(Dependency)", "모듈 분리", "UML 구조적 다이어그램", "계층 구조"],
+    "common_mistakes": ["컴포넌트 다이어그램과 혼동 (컴포넌트는 구현 단위)", "클래스 다이어그램과 패키지 다이어그램의 용도 혼동", "패키지를 물리적 디렉토리와 동일시"],
+    "related": ["컴포넌트 다이어그램(Component Diagram)", "클래스 다이어그램", "배치 다이어그램(Deployment Diagram)", "소프트웨어 아키텍처", "모듈화"]
+  },
+  {
+    "id": 8,
+    "summary": "LOC 기법에서 개발 기간은 '노력인월 = LOC / 1인당 생산성', '기간 = 노력인월 / 투입인원' 공식으로 계산한다.",
+    "detail": "LOC(Lines Of Code) 기법은 소스 코드 라인 수를 기반으로 개발 비용과 기간을 산정하는 기법이다. 노력인월(Man-Month)은 총 코드 라인 수를 1인당 월 생산성으로 나누어 구한다. 개발 기간은 총 노력인월을 투입 인원으로 나누어 산출한다. 예시: LOC=30,000, 1인당 생산성=300 LOC/월, 투입인원=5명 → 노력인월=100, 기간=100/5=20개월.",
+    "key_concepts": ["LOC(Lines Of Code)", "노력인월(Man-Month)", "1인당 생산성", "투입인원", "개발 기간 산정"],
+    "common_mistakes": ["노력인월과 기간을 동일한 값으로 혼동", "공식에서 나눗셈 순서를 잘못 적용", "LOC 기법이 코드 품질을 반영한다고 오해"],
+    "related": ["COCOMO 모델", "기능 점수(Function Point)", "소프트웨어 비용 산정", "프로젝트 관리", "개발 생산성"]
+  },
+  {
+    "id": 9,
+    "summary": "스키마(Schema)는 데이터베이스의 구조와 제약 조건에 관한 전반적인 명세를 기술한 메타데이터이다.",
+    "detail": "스키마는 데이터베이스에 저장되는 데이터의 구조, 데이터 타입, 제약 조건, 관계 등을 정의한 명세서이다. 외부 스키마(사용자 뷰), 개념 스키마(전체 논리 구조), 내부 스키마(물리적 저장 구조)의 3단계 구조로 나뉜다. 스키마는 데이터 독립성을 보장하며, DBA(데이터베이스 관리자)가 관리한다. DDL(데이터 정의어)을 사용하여 스키마를 정의한다.",
+    "key_concepts": ["외부 스키마(External Schema)", "개념 스키마(Conceptual Schema)", "내부 스키마(Internal Schema)", "데이터 독립성", "메타데이터"],
+    "common_mistakes": ["스키마와 데이터베이스 자체를 동일시", "3단계 스키마 각각의 역할 혼동", "스키마와 인스턴스(실제 데이터)를 혼동"],
+    "related": ["데이터 독립성", "DDL(데이터 정의어)", "DBA(데이터베이스 관리자)", "메타데이터", "데이터 사전(Data Dictionary)"]
+  },
+  {
+    "id": 10,
+    "summary": "DB 설계 단계는 물리적 설계, 개념적 설계, 논리적 설계로 나뉘며, 실제 진행 순서는 개념→논리→물리이다.",
+    "detail": "개념적 설계는 E-R 다이어그램으로 현실 세계를 추상화하는 단계이고, 논리적 설계는 특정 DBMS에 맞는 스키마(관계형 테이블 등)로 변환하는 단계이다. 물리적 설계는 실제 저장 구조, 인덱스, 파일 구조 등을 결정하는 단계이다. 각 단계의 특성과 산출물을 구분하는 것이 중요하다.",
+    "key_concepts": ["개념적 설계(E-R 다이어그램)", "논리적 설계(릴레이션 스키마)", "물리적 설계(저장 구조)", "DBMS 독립성", "정규화"],
+    "common_mistakes": ["설계 단계 순서 혼동 (개념→논리→물리)", "논리적 설계와 물리적 설계의 차이 미구분", "개념적 설계 산출물을 릴레이션 스키마로 오해"],
+    "related": ["E-R 다이어그램", "정규화(Normalization)", "DBMS", "스키마(Schema)", "데이터 모델링"]
+  },
+  {
+    "id": 11,
+    "summary": "DB 구축 과정은 요구분석→개념적 설계→논리적 설계→물리적 설계→구현의 5단계로 진행된다.",
+    "detail": "요구분석 단계에서는 사용자 요구사항을 수집하고 분석한다. 개념적 설계에서는 E-R 다이어그램을 통해 현실 세계를 모델링한다. 논리적 설계에서는 DBMS에 맞는 논리적 스키마(관계형 모델 등)로 변환한다. 물리적 설계에서는 실제 저장 방법과 인덱스 구조를 결정한다. 마지막 구현 단계에서는 DDL을 사용하여 실제 데이터베이스를 생성한다.",
+    "key_concepts": ["요구분석", "개념적 설계", "논리적 설계", "물리적 설계", "구현(DDL)"],
+    "common_mistakes": ["단계 순서 혼동 특히 논리적·물리적 설계 순서", "각 단계의 산출물 혼동", "구현 단계를 논리적 설계와 혼동"],
+    "related": ["E-R 다이어그램", "DDL(데이터 정의어)", "정규화", "스키마", "DBMS"]
+  },
+  {
+    "id": 12,
+    "summary": "데이터 모델의 구성요소는 연산(Operation), 구조(Structure), 제약(Constraint)이다.",
+    "detail": "데이터 모델은 데이터 구조(Structure), 연산(Operation), 제약 조건(Constraint)의 세 가지 요소로 구성된다. 구조는 데이터베이스에 표현될 대상으로서의 개체 타입과 그 관계를 말한다. 연산은 데이터베이스에 저장된 데이터를 처리하는 작업(삽입, 삭제, 수정, 검색)을 의미한다. 제약 조건은 데이터의 정확성과 일관성을 위한 규칙이다.",
+    "key_concepts": ["구조(Structure)", "연산(Operation)", "제약 조건(Constraint)", "데이터 무결성", "개체 타입"],
+    "common_mistakes": ["제약 조건을 구성요소에서 누락", "구조와 스키마를 동일시", "연산을 SQL 명령어로만 한정하여 이해"],
+    "related": ["관계형 데이터 모델", "E-R 모델", "객체지향 데이터 모델", "스키마", "데이터 무결성"]
+  },
+  {
+    "id": 13,
+    "summary": "카디널리티(Cardinality)는 릴레이션의 튜플(행)의 수이고, 디그리(Degree)는 속성(열)의 수이다.",
+    "detail": "관계형 데이터베이스에서 카디널리티(기수)는 테이블에 존재하는 행(레코드, 튜플)의 개수를 의미한다. 디그리(차수)는 테이블의 열(컬럼, 속성)의 개수를 의미한다. 예를 들어 5개의 행과 4개의 열로 구성된 테이블은 카디널리티=5, 디그리=4이다. 이 개념은 데이터베이스 최적화와 관계 이해에 중요하다.",
+    "key_concepts": ["카디널리티(Cardinality)", "디그리(Degree)", "튜플(Tuple)", "속성(Attribute)", "릴레이션(Relation)"],
+    "common_mistakes": ["카디널리티와 디그리를 반대로 외움", "ER 다이어그램의 카디널리티(1:N 관계)와 혼동", "튜플과 속성의 개념 혼동"],
+    "related": ["릴레이션(Relation)", "튜플(Tuple)", "속성(Attribute)", "관계형 데이터베이스", "ER 다이어그램 카디널리티"]
+  },
+  {
+    "id": 14,
+    "summary": "E-R 다이어그램에서 직사각형은 개체 집합, 마름모는 관계 집합, 타원은 속성, 선은 연결을 나타낸다.",
+    "detail": "E-R(Entity-Relationship) 다이어그램의 주요 기호: 직사각형(Rectangle)은 개체 집합(Entity Set), 마름모(Diamond)는 관계 집합(Relationship Set), 타원(Ellipse)은 속성(Attribute), 선(Line)은 개체/관계와 속성의 연결을 나타낸다. 이중 직사각형은 약한 개체 집합, 이중 타원은 다중값 속성을 의미한다. E-R 다이어그램은 개념적 데이터 모델링의 핵심 도구이다.",
+    "key_concepts": ["개체 집합(Entity Set, 직사각형)", "관계 집합(Relationship Set, 마름모)", "속성(Attribute, 타원)", "연결선", "E-R 다이어그램"],
+    "common_mistakes": ["마름모와 직사각형 기호 역할 혼동", "타원이 속성임을 누락", "약한 개체 집합과 일반 개체 집합 구분 미흡"],
+    "related": ["개념적 설계", "스키마 변환", "카디널리티 제약", "키 속성", "관계형 모델 변환"]
+  },
+  {
+    "id": 15,
+    "summary": "후보키(Candidate Key)는 유일성(Uniqueness)과 최소성(Minimality)을 모두 만족해야 한다.",
+    "detail": "유일성은 릴레이션의 모든 튜플에 대해 유일하게 식별할 수 있어야 함을 의미한다. 최소성은 키를 구성하는 속성의 개수가 최소여야 함을, 즉 어떤 속성도 제거하면 유일성이 깨져야 함을 의미한다. 기본키(Primary Key)는 후보키 중 하나를 선택한 것이며, 슈퍼키(Super Key)는 유일성은 만족하지만 최소성은 만족하지 않을 수 있다. 외래키(Foreign Key)는 다른 릴레이션의 기본키를 참조한다.",
+    "key_concepts": ["유일성(Uniqueness)", "최소성(Minimality)", "후보키(Candidate Key)", "기본키(Primary Key)", "슈퍼키(Super Key)"],
+    "common_mistakes": ["슈퍼키와 후보키 혼동 (슈퍼키는 최소성 불필요)", "기본키와 후보키를 동일시", "복합키의 최소성 판단 오류"],
+    "related": ["기본키(Primary Key)", "외래키(Foreign Key)", "슈퍼키(Super Key)", "대체키(Alternate Key)", "무결성 제약"]
+  },
+  {
+    "id": 16,
+    "summary": "관계대수의 기호는 ∪(합집합), -(차집합), ×(교차곱), π(프로젝션), ▷◁(조인)이며 각각 특정 집합/관계 연산을 수행한다.",
+    "detail": "관계대수(Relational Algebra)는 관계형 데이터베이스에서 원하는 데이터를 얻기 위한 절차적 언어이다. 순수 관계 연산자로는 Selection(σ, 조건에 맞는 튜플 선택), Projection(π, 특정 속성 선택), Join(▷◁, 두 릴레이션 결합), Division(÷)이 있다. 집합 연산자로는 합집합(∪), 교집합(∩), 차집합(-), 교차곱(×)이 있다. SQL의 이론적 기반이 된다.",
+    "key_concepts": ["Selection(σ)", "Projection(π)", "Join(▷◁)", "합집합(∪)", "교차곱(×)"],
+    "common_mistakes": ["σ(Selection)와 π(Projection) 기호 혼동", "교차곱(×)과 조인(▷◁)의 차이 미구분", "관계대수와 관계해석의 차이 혼동 (대수=절차적, 해석=비절차적)"],
+    "related": ["관계해석(Relational Calculus)", "SQL", "Selection(σ)", "Projection(π)", "Join"]
+  },
+  {
+    "id": 17,
+    "summary": "나누기 연산(Division, ÷)은 릴레이션 B의 모든 튜플과 대응되는 릴레이션 A의 튜플을 추출하는 연산이다.",
+    "detail": "Division 연산(R ÷ S)은 릴레이션 S의 모든 속성값과 매칭되는 R의 튜플에서 S의 속성을 제외한 나머지 속성들을 반환한다. '모든 X에 대해 Y를 만족하는' 쿼리를 표현할 때 사용된다. 예를 들어 '모든 과목을 수강한 학생'을 구할 때 활용된다. SQL에서 직접적인 대응 연산자는 없으며, EXISTS나 NOT EXISTS로 구현한다.",
+    "key_concepts": ["Division 연산(÷)", "전체 매칭", "관계대수", "프로젝션", "집합 포함"],
+    "common_mistakes": ["나누기를 단순 산술 나눗셈으로 혼동", "Division 결과에서 속성 구성 오해", "언제 Division을 사용하는지 맥락 파악 부족"],
+    "related": ["관계대수(Relational Algebra)", "Projection(π)", "SQL EXISTS", "전체 조인(Universal Quantifier)", "관계해석"]
+  },
+  {
+    "id": 18,
+    "summary": "관계해석(Relational Calculus)은 수학의 술어 해석에 기반한 비절차적(Non-procedural) 데이터 언어이다.",
+    "detail": "관계해석은 E.F. Codd가 수학의 술어 논리(Predicate Logic)에 기반하여 제안한 데이터 언어로, '무엇을 원하는가'를 기술하는 비절차적 언어이다. 반면 관계대수는 '어떻게 얻는가'를 기술하는 절차적 언어이다. 튜플 관계해석과 도메인 관계해석의 두 가지 형태가 있다. SQL은 관계해석에 더 가까운 비절차적 언어이다.",
+    "key_concepts": ["비절차적 언어(Non-procedural)", "술어 해석(Predicate Calculus)", "튜플 관계해석", "도메인 관계해석", "E.F. Codd"],
+    "common_mistakes": ["관계해석과 관계대수를 혼동 (해석=비절차적, 대수=절차적)", "관계해석이 SQL과 동일하다고 오해", "비절차적의 의미를 잘못 이해"],
+    "related": ["관계대수(Relational Algebra)", "SQL", "술어 논리(Predicate Logic)", "E.F. Codd", "비절차적 언어"]
+  },
+  {
+    "id": 19,
+    "summary": "삭제 이상(Deletion Anomaly)은 튜플 삭제 시 의도하지 않은 다른 정보도 함께 삭제되는 현상이다.",
+    "detail": "삭제 이상은 정규화가 충분히 이루어지지 않은 릴레이션에서 발생한다. 예를 들어 학생 정보와 수강 정보가 하나의 테이블에 있을 때, 특정 수강 기록을 삭제하면 해당 학생의 기본 정보까지 삭제될 수 있다. 이는 데이터 의존성 문제로 인해 발생하며, 정규화를 통해 해결할 수 있다. 삽입 이상, 갱신 이상과 함께 이상(Anomaly)의 3가지 유형 중 하나이다.",
+    "key_concepts": ["삭제 이상(Deletion Anomaly)", "의도치 않은 데이터 손실", "정규화 부재", "데이터 의존성", "릴레이션 분리"],
+    "common_mistakes": ["삭제 이상과 갱신 이상을 혼동", "이상 현상이 왜 발생하는지 원인(정규화 미흡) 파악 부족", "삽입·삭제·갱신 이상의 각 특징 혼동"],
+    "related": ["삽입 이상(Insertion Anomaly)", "갱신 이상(Update Anomaly)", "정규화(Normalization)", "함수적 종속", "이상(Anomaly)"]
+  },
+  {
+    "id": 20,
+    "summary": "이상(Anomaly)은 정규화되지 않은 릴레이션에서 발생하는 삽입 이상, 삭제 이상, 갱신 이상의 3가지 현상이다.",
+    "detail": "삽입 이상(Insertion Anomaly)은 데이터 삽입 시 원하지 않는 데이터를 함께 삽입해야 하는 현상이다. 삭제 이상(Deletion Anomaly)은 데이터 삭제 시 의도하지 않은 데이터까지 함께 삭제되는 현상이다. 갱신 이상(Update Anomaly)은 중복 데이터 중 일부만 수정되어 데이터 불일치가 발생하는 현상이다. 세 가지 이상 모두 정규화를 통해 릴레이션을 적절히 분해함으로써 해결할 수 있다.",
+    "key_concepts": ["삽입 이상(Insertion Anomaly)", "삭제 이상(Deletion Anomaly)", "갱신 이상(Update Anomaly)", "정규화", "데이터 중복"],
+    "common_mistakes": ["이상의 종류를 2가지로 잘못 기억", "각 이상의 발생 상황과 특징 혼동", "이상 현상의 해결책이 정규화임을 간과"],
+    "related": ["정규화(Normalization)", "함수적 종속(Functional Dependency)", "릴레이션 분해", "제1정규형(1NF)", "데이터 무결성"]
+  },
+  {
+    "id": 21,
+    "summary": "완전 함수적 종속은 기본키 전체에 종속, 부분 함수적 종속은 기본키 일부에 종속, 이행적 함수적 종속은 비키 속성을 통한 간접 종속이다.",
+    "detail": "완전 함수적 종속(Full Functional Dependency)은 속성이 기본키 전체에 종속되는 것으로, 2NF의 조건이다. 부분 함수적 종속(Partial Functional Dependency)은 복합 기본키에서 일부 키 속성에만 종속되는 경우로, 2NF 위반이다. 이행적 함수적 종속(Transitive Functional Dependency)은 A→B, B→C일 때 A→C가 성립하는 경우로, 3NF 위반이다. 각 정규형은 특정 종속 관계를 제거함으로써 달성된다.",
+    "key_concepts": ["완전 함수적 종속(Full FD)", "부분 함수적 종속(Partial FD)", "이행적 함수적 종속(Transitive FD)", "복합 기본키", "정규형"],
+    "common_mistakes": ["완전과 부분 함수적 종속의 조건 혼동", "이행적 종속의 A→B→C 관계를 직접 종속으로 오해", "단일 기본키에서 부분 종속이 발생할 수 없음을 간과"],
+    "related": ["제2정규형(2NF)", "제3정규형(3NF)", "BCNF", "정규화(Normalization)", "기본키(Primary Key)"]
+  },
+  {
+    "id": 22,
+    "summary": "제2정규형(2NF)은 제1정규형을 만족하면서 부분 함수적 종속을 제거한 정규형이다.",
+    "detail": "2NF는 릴레이션이 1NF이고, 기본키가 아닌 모든 속성이 기본키에 완전 함수적으로 종속될 때 달성된다. 복합 기본키를 가진 릴레이션에서 일부 키에만 종속되는 속성이 있다면 2NF를 위반한다. 2NF를 만족하려면 부분 종속 속성을 별도의 릴레이션으로 분리해야 한다. 단일 속성 기본키를 가진 릴레이션은 자동으로 2NF를 만족한다.",
+    "key_concepts": ["제2정규형(2NF)", "부분 함수적 종속 제거", "완전 함수적 종속", "복합 기본키", "릴레이션 분해"],
+    "common_mistakes": ["단일 기본키에서 2NF 위반이 가능하다고 오해", "1NF 미만에서 2NF 논의", "2NF와 3NF의 조건 혼동"],
+    "related": ["제1정규형(1NF)", "제3정규형(3NF)", "부분 함수적 종속", "완전 함수적 종속", "정규화"]
+  },
+  {
+    "id": 23,
+    "summary": "반정규화(Denormalization)는 데이터베이스 성능 향상을 위해 의도적으로 정규화 원칙을 위배하는 설계 기법이다.",
+    "detail": "반정규화는 과도한 조인(Join) 연산으로 인한 성능 저하를 해결하기 위해 중복 데이터를 허용하거나 테이블을 통합하는 방법이다. 읽기 성능은 향상되지만 데이터 무결성 유지 비용이 증가하고 저장 공간이 늘어난다. 자주 조회되는 대용량 데이터에 주로 적용되며, 트레이드오프를 고려하여 신중하게 결정해야 한다. 테이블 통합, 테이블 분할, 중복 컬럼 추가 등의 방법이 있다.",
+    "key_concepts": ["성능 향상(조인 감소)", "중복 허용", "테이블 통합", "읽기 성능 vs 무결성", "대용량 데이터"],
+    "common_mistakes": ["정규화와 반정규화를 완전히 반대 개념으로만 이해", "반정규화가 항상 나쁜 설계라는 오해", "반정규화와 비정규화를 혼동"],
+    "related": ["정규화(Normalization)", "비정규화(Unnormalization)", "조인 최적화", "인덱스(Index)", "데이터베이스 성능 튜닝"]
+  },
+  {
+    "id": 24,
+    "summary": "비정규화(Denormalization)는 성능 향상을 목적으로 정규화된 데이터 모델을 통합, 중복, 분리하는 과정이다.",
+    "detail": "비정규화(반정규화)는 정규화의 역과정으로, 조회 성능을 향상시키기 위해 의도적으로 데이터 중복을 허용한다. 테이블 통합(여러 테이블을 하나로 합침), 테이블 분할(수직/수평 분할), 중복 칼럼 추가 등의 기법이 포함된다. OLAP(분석 시스템)에서 자주 사용되며, 트랜잭션 처리보다 조회 위주의 시스템에 적합하다. 데이터 일관성 관리에 추가적인 비용이 발생한다.",
+    "key_concepts": ["테이블 통합", "중복 칼럼 추가", "테이블 분할", "조회 성능 향상", "OLAP"],
+    "common_mistakes": ["비정규화와 정규화의 목적 혼동", "비정규화가 설계 오류라고 단정", "반정규화(Denormalization)와 비정규화를 다른 개념으로 오해"],
+    "related": ["정규화(Normalization)", "OLAP", "조인(Join)", "데이터 중복", "파티셔닝(Partitioning)"]
+  },
+  {
+    "id": 25,
+    "summary": "원자성(Atomicity)은 트랜잭션의 모든 연산이 완전히 실행되거나 전혀 실행되지 않아야 한다는 트랜잭션 특성이다.",
+    "detail": "원자성은 트랜잭션을 구성하는 연산들이 모두 성공적으로 완료(Commit)되거나, 하나라도 실패하면 전체를 취소(Rollback)해야 함을 의미한다. All or Nothing 원칙이라고도 한다. 예를 들어 계좌 이체 시 출금과 입금이 동시에 성공하거나 동시에 실패해야 한다. ACID 특성 중 하나이며, Commit과 Rollback 연산으로 구현된다.",
+    "key_concepts": ["원자성(Atomicity)", "All or Nothing", "Commit", "Rollback", "ACID"],
+    "common_mistakes": ["원자성과 일관성(Consistency) 혼동", "ACID 4가지 특성 중 원자성의 위치 혼동", "원자성이 동시성과 관련된다고 오해"],
+    "related": ["일관성(Consistency)", "격리성(Isolation)", "지속성(Durability)", "Commit/Rollback", "트랜잭션(Transaction)"]
+  },
+  {
+    "id": 26,
+    "summary": "트랜잭션의 ACID 특성은 원자성(Atomicity), 일관성(Consistency), 독립성(Isolation), 지속성(Durability)이다.",
+    "detail": "원자성(Atomicity)은 트랜잭션 연산이 모두 반영되거나 전혀 반영되지 않아야 함을 의미한다. 일관성(Consistency)은 트랜잭션 수행 전후로 데이터베이스가 일관된 상태를 유지해야 함을 의미한다. 독립성(Isolation)은 동시에 실행되는 트랜잭션들이 서로 영향을 미치지 않아야 함을 의미한다. 지속성(Durability)은 완료된 트랜잭션의 결과가 영구적으로 보존되어야 함을 의미한다.",
+    "key_concepts": ["원자성(Atomicity)", "일관성(Consistency)", "독립성/격리성(Isolation)", "지속성(Durability)", "ACID"],
+    "common_mistakes": ["ACID 4가지 중 일부를 누락하거나 혼동", "독립성과 원자성 개념 혼동", "일관성을 격리성으로 오해"],
+    "related": ["트랜잭션(Transaction)", "Commit/Rollback", "동시성 제어(Concurrency Control)", "회복(Recovery)", "잠금(Lock)"]
+  },
+  {
+    "id": 27,
+    "summary": "색인(Index) 파일 구조는 <키값, 레코드 주소> 쌍으로 구성되어 데이터 검색 속도를 향상시키는 자료구조이다.",
+    "detail": "인덱스(색인)는 데이터베이스 테이블에서 특정 컬럼 값과 해당 레코드의 물리적 주소를 쌍으로 저장하여 빠른 검색을 가능하게 한다. B-트리, B+트리, 해시 인덱스 등 다양한 구조로 구현된다. 인덱스는 검색 성능을 향상시키지만 삽입/삭제/수정 시 인덱스도 함께 갱신되어야 하므로 쓰기 성능에 부담을 준다. 기본키에는 자동으로 인덱스가 생성된다.",
+    "key_concepts": ["인덱스(Index)", "<값, 주소> 쌍", "B+트리", "검색 성능 향상", "기본키 인덱스"],
+    "common_mistakes": ["인덱스가 모든 쿼리를 빠르게 한다는 오해", "인덱스 생성이 쓰기 성능에 미치는 영향 간과", "클러스터드/논클러스터드 인덱스 혼동"],
+    "related": ["B+트리(B+ Tree)", "해시 인덱스", "기본키(Primary Key)", "물리적 설계", "쿼리 최적화"]
+  },
+  {
+    "id": 28,
+    "summary": "재해복구시스템(DRS, Disaster Recovery System)은 재난이나 비상 상황에서도 서비스의 연속성을 보장하는 시스템이다.",
+    "detail": "재해복구시스템(DR System)은 화재, 지진, 시스템 장애 등의 재난 상황에서 IT 서비스와 데이터를 보호하고 빠르게 복구하기 위한 시스템이다. RTO(복구 목표 시간)와 RPO(복구 목표 시점)가 핵심 지표이다. Hot-Site(실시간 동기화), Warm-Site(주기적 백업), Cold-Site(기본 인프라만 준비)의 세 가지 유형으로 구분된다. BCP(업무연속성계획)의 핵심 구성 요소이다.",
+    "key_concepts": ["재해복구(DR)", "RTO(복구 목표 시간)", "RPO(복구 목표 시점)", "Hot/Warm/Cold Site", "BCP(업무연속성계획)"],
+    "common_mistakes": ["DR과 백업(Backup)을 동일시", "RTO와 RPO의 의미 혼동", "재해복구 유형(Hot/Warm/Cold)의 특징 혼동"],
+    "related": ["BCP(Business Continuity Plan)", "백업(Backup)", "고가용성(HA, High Availability)", "이중화", "장애 복구(Failover)"]
+  },
+  {
+    "id": 29,
+    "summary": "임의적 접근 통제(DAC, Discretionary Access Control)는 데이터 소유자나 관리자가 사용자 신원에 따라 접근 권한을 부여하는 보안 모델이다.",
+    "detail": "DAC(임의적 접근 통제)는 자원의 소유자가 접근 권한을 자유롭게 설정할 수 있는 접근 제어 방식이다. SQL의 GRANT/REVOKE 명령어가 DAC의 대표적인 구현이다. 강제적 접근 통제(MAC, Mandatory Access Control)는 보안 등급에 따라 시스템이 강제로 접근을 통제하며, 역할 기반 접근 통제(RBAC)는 사용자 역할에 따라 권한을 부여한다.",
+    "key_concepts": ["임의적 접근 통제(DAC)", "접근 권한 부여", "GRANT/REVOKE", "자원 소유자", "사용자 신원"],
+    "common_mistakes": ["DAC와 MAC 혼동 (DAC=소유자 재량, MAC=시스템 강제)", "RBAC를 DAC의 일종으로 혼동", "DAC의 보안 취약점(트로이 목마) 간과"],
+    "related": ["강제적 접근 통제(MAC)", "역할 기반 접근 통제(RBAC)", "GRANT/REVOKE", "접근 제어 목록(ACL)", "보안 정책"]
+  },
+  {
+    "id": 30,
+    "summary": "REDO(재실행)는 커밋된 트랜잭션을 재수행하고, UNDO(취소)는 완료되지 않은 트랜잭션을 원상 복구하는 회복 연산이다.",
+    "detail": "데이터베이스 회복 기법에서 REDO는 시스템 장애 후 이미 Commit된 트랜잭션의 변경 내용을 로그를 이용해 재적용하는 연산이다. UNDO는 Commit되지 않은(미완료) 트랜잭션의 변경 내용을 취소하여 원래 상태로 되돌리는 연산이다. 체크포인트(Checkpoint)를 기준으로 장애 발생 시 UNDO/REDO 대상 트랜잭션을 구분한다. 로그(Log) 기반 회복 기법의 핵심이다.",
+    "key_concepts": ["REDO(재실행)", "UNDO(취소)", "트랜잭션 회복", "체크포인트(Checkpoint)", "로그(Log)"],
+    "common_mistakes": ["REDO와 UNDO의 대상 트랜잭션 혼동 (REDO=Commit됨, UNDO=미완료)", "장애 유형에 따른 회복 방법 혼동", "체크포인트의 역할 간과"],
+    "related": ["트랜잭션 회복(Recovery)", "체크포인트(Checkpoint)", "로그(Log)", "Commit/Rollback", "ACID"]
+  },
+  {
+    "id": 31,
+    "summary": "XML(eXtensible Markup Language)은 HTML의 호환성 문제와 SGML의 복잡성을 해결하기 위해 개발된 확장 가능한 마크업 언어이다.",
+    "detail": "XML은 데이터를 구조화하여 표현하기 위한 마크업 언어로, 사용자가 직접 태그를 정의할 수 있는 확장성이 특징이다. HTML과 달리 데이터의 의미와 구조를 표현하는 데 초점을 맞추며, SGML의 복잡성을 간소화하였다. 웹 서비스, 설정 파일, 데이터 교환 등 다양한 분야에서 사용된다. DTD나 XML Schema를 통해 구조를 검증할 수 있다.",
+    "key_concepts": ["확장 가능한 태그", "HTML 호환성 문제 해결", "SGML 간소화", "데이터 구조화", "DTD/XML Schema"],
+    "common_mistakes": ["XML과 HTML의 용도를 동일시 (XML=데이터, HTML=표현)", "XML이 프로그래밍 언어라는 오해", "JSON과 XML의 차이 혼동"],
+    "related": ["HTML", "SGML", "JSON", "DTD", "SOAP/WSDL"]
+  },
+  {
+    "id": 32,
+    "summary": "SOAP(Simple Object Access Protocol)는 HTTP 등의 프로토콜을 통해 XML 기반 메시지를 교환하는 웹 서비스 통신 프로토콜이다.",
+    "detail": "SOAP는 분산 환경에서 구조화된 정보를 교환하기 위한 XML 기반의 메시지 프로토콜이다. HTTP, SMTP 등 다양한 전송 프로토콜 위에서 동작하며, WSDL로 서비스를 기술하고 UDDI로 서비스를 등록/검색한다. REST API에 비해 무겁고 복잡하지만 보안, 트랜잭션 등 엔터프라이즈 기능이 풍부하다. 메시지는 Envelope, Header, Body로 구성된다.",
+    "key_concepts": ["XML 기반 메시지", "HTTP 전송", "웹 서비스", "WSDL 연계", "Envelope/Header/Body"],
+    "common_mistakes": ["SOAP와 REST를 동일한 수준으로 비교하며 혼동", "SOAP 메시지 구조(Envelope 등) 파악 부족", "WSDL과 SOAP의 역할 혼동"],
+    "related": ["WSDL", "UDDI", "REST", "XML", "웹 서비스(Web Service)"]
+  },
+  {
+    "id": 33,
+    "summary": "WSDL(Web Services Description Language)은 웹 서비스의 인터페이스, 메시지 형식, 프로토콜을 XML로 기술하고 게시하기 위한 언어이다.",
+    "detail": "WSDL은 웹 서비스가 제공하는 기능, 입출력 메시지 형식, 접근 방법(바인딩), 서비스 위치(URL) 등을 XML 형식으로 기술한다. SOAP 기반 웹 서비스에서 서비스 명세를 표준화된 방식으로 제공하여 클라이언트가 서비스를 자동으로 이해하고 호출할 수 있게 한다. UDDI는 WSDL로 기술된 서비스를 등록하고 검색하는 디렉토리 서비스이다.",
+    "key_concepts": ["웹 서비스 기술(Description)", "XML 기반", "인터페이스 명세", "바인딩(Binding)", "서비스 위치(URL)"],
+    "common_mistakes": ["WSDL과 SOAP의 역할 혼동 (WSDL=명세, SOAP=통신)", "WSDL이 직접 서비스를 실행한다는 오해", "UDDI와 WSDL의 관계 미파악"],
+    "related": ["SOAP", "UDDI", "XML", "REST", "웹 서비스(Web Service)"]
+  }
+]
