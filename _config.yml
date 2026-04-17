@@ -133,7 +133,8 @@ pwa:
       - "/pv"
       - "/talk3"
       - "/saju"
-      
+      - "/jeongcheogi-problems"
+
       # - "/example"  # "/example/*" 주소는 캐시에서 제외됨
 
 # 한 페이지에 보여줄 게시물 수
