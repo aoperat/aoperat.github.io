@@ -1,3 +1,6 @@
 [submodule "assets/lib"]
 	path = assets/lib
 	url = https://github.com/cotes2020/chirpy-static-assets.git
+[submodule "jeongcheogi-problems"]
+	path = jeongcheogi-problems
+	url = https://github.com/aoperat/jeongcheogi-problems.git
